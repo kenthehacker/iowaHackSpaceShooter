@@ -1,0 +1,22 @@
+import pygame
+class asteroid:
+    pass
+    def __init__(self):
+        self.height = 50
+        self.width = 50
+        self.speedy = 30
+        self.speedx = 20
+        self.x=0
+        self.y = 9
+
+    def collisionDetection(self,otherObject):
+        pass
+    def getX(self):
+        return self.x
+        
+    def getY(self):
+        return self.y
+
+    def moveAndDraw(self):
+        pygame.draw.rect(0,0, self.width, self.height)
+        

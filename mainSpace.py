@@ -1,6 +1,8 @@
 import pygame
 import sys
 import os
+import asteroid
+
 pygame.init()
 
 #pixel size of game
@@ -26,7 +28,8 @@ def splashScreen():
 while(running):
     fps.tick(60)
     splashScreen()
-
+    s = asteroid.Asteroid(screen)
+    s.moveAndDraw()
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
